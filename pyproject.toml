@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+
+[project]
+name = "pytrajviz"
+version = "0.1.0"
+description = "Interactive web-based visualization of MD trajectories using Plotly Dash"
+authors = [{name = "Jakub Hryc"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "mdtraj>=1.9",
+    "plotly>=5.0",
+    "dash>=2.0",
+    "numpy",
+    "scipy"
+]
+
+[project.optional-dependencies]
+dev = ["jupyter", "black", "pytest"]
+
+[project.scripts]
+pytrajviz = "pytrajviz.app:main"

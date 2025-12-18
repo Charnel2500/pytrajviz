@@ -1,0 +1,5 @@
+mdtraj>=1.9.0
+plotly>=5.0
+dash>=2.0
+numpy
+scipy

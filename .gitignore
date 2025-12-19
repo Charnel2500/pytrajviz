@@ -80,3 +80,8 @@ Desktop.ini
 *.cache
 
 # ——— Optional: allow small test trajectories in
+# === Allow specific small demo files (for GitHub examples) ===
+!examples/md1.xtc
+!examples/md1.gro
+
+
